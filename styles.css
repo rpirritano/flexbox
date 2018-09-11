@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -64,4 +64,22 @@
   border: 1px solid #fff;
   width: 300px;
   height: 300px;
+}
+/*Adding an order property to a flex item defines its order in the container without affecting surrounding items.
+Its default value is 0, and increasing or decreasing it from there moves the item to the right or left, respectively.
+*/
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+
+/* Same values can be used with align-self:  center, flex-start, flex-end, stretch, baseline*/
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
