@@ -102,6 +102,9 @@ Its default value is 0, and increasing or decreasing it from there moves the ite
 .footer-one,
 .footer-three {
   background-color: #5995DA;
-  flex: initial;  /* flex:inital falls back to the item's explicit width property*/
+  flex: initial;  /* flex:inital falls back to the item's explicit width property, called fixed, and wont resize with browser*/
   width: 300px;
+}
+.signup {
+  margin-left: auto; /* autom margin eats up all extra space in flex container */
 }
