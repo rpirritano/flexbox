@@ -83,3 +83,25 @@ Its default value is 0, and increasing or decreasing it from there moves the ite
   align-self: flex-end;
   margin-bottom: 20px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1; /* flex:1 matches the width of the footer, so all have equal length*/
+}
+.footer-three {
+  flex: 2;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;  /* flex:inital falls back to the item's explicit width property*/
+  width: 300px;
+}
